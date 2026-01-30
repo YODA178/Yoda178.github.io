@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karya - Yogi Ardiansyah</title>
+    <meta name="description" content="Karya dan Proyek Yogi Ardiansyah">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient">
+    <!-- Floating Stars -->
+    <div class="stars" id="stars"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon"><img src="./assets/img/logo.png" alt="Logo" style="width:100%;height:100%;object-fit:contain;"></span>
+            YA.
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-menu" id="navMenu">
+            <a href="index.html" class="nav-link">Beranda</a>
+            <a href="index.html#about" class="nav-link">Tentang Saya</a>
+            <a href="Karya.html" class="nav-link active">Karya</a>
+            <a href="index.html#works" class="nav-link">Portofolio</a>
+            <a href="index.html#contact" class="nav-cta">
+                <i class="fas fa-envelope"></i>
+                Kontak
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero karya-hero" id="home">
+        <div class="container">
+            <div class="hero-content" style="max-width:800px;margin:0 auto;text-align:center;">
+                <h1 class="hero-title">Karya dan Proyek Saya</h1>
+                <p class="hero-description" style="max-width:600px;margin:0 auto;">Kumpulan hasil karya dan eksplorasi saya dalam bidang desain grafis dan pengembangan web.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <div class="works-container">
+        <div class="works-grid">
+            <div class="work-card reveal" data-tilt>
+                <div class="work-card-image">
+                    <div style="width:100%;height:100%;background:linear-gradient(135deg, var(--accent) 0%, #017a86 100%);display:flex;align-items:center;justify-content:center;">
+                        <i class="fas fa-database" style="font-size:60px;color:rgba(10,14,39,0.3);"></i>
+                    </div>
+                </div>
+                <div class="work-card-content">
+                    <h3 class="work-card-title">Big Data</h3>
+                    <p class="work-card-description">Halaman ini menjelaskan pengertian Big Data, manfaatnya, serta peran pentingnya dalam era digital.</p>
+                    <a href="bigdata.html" class="work-card-link">
+                        Lihat Selengkapnya
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="work-card reveal" data-tilt>
+                <div class="work-card-image">
+                    <div style="width:100%;height:100%;background:linear-gradient(135deg, #017a86 0%, #015f68 100%);display:flex;align-items:center;justify-content:center;">
+                        <i class="fas fa-cubes" style="font-size:60px;color:rgba(10,14,39,0.3);"></i>
+                    </div>
+                </div>
+                <div class="work-card-content">
+                    <h3 class="work-card-title">Framework Big Data</h3>
+                    <p class="work-card-description">Bahasan seputar framework populer seperti Hadoop, Spark, dan bagaimana peranannya dalam pengolahan data skala besar.</p>
+                    <a href="framework.html" class="work-card-link">
+                        Lihat Selengkapnya
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="work-card reveal" data-tilt>
+                <div class="work-card-image">
+                    <div style="width:100%;height:100%;background:linear-gradient(135deg, #015f68 0%, var(--accent) 100%);display:flex;align-items:center;justify-content:center;">
+                        <i class="fas fa-table" style="font-size:60px;color:rgba(10,14,39,0.3);"></i>
+                    </div>
+                </div>
+                <div class="work-card-content">
+                    <h3 class="work-card-title">SQL dan NoSQL</h3>
+                    <p class="work-card-description">Penjelasan detail tentang perbedaan antara database SQL dan NoSQL disertai contoh penggunaannya di dunia nyata.</p>
+                    <a href="sql.html" class="work-card-link">
+                        Lihat Selengkapnya
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2025 Yogi Ardiansyah – Semua Hak Dilindungi</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/yogi__ardiansyah?igsh=MTZwNnl4OHg2M3BkeQ==" class="social-link" aria-label="Instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/YODA178" class="social-link" aria-label="GitHub" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/yogi-ardiansyah-875833343" class="social-link" aria-label="LinkedIn" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>

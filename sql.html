@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SQL dan NoSQL Database</title>
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+    <meta
+      name="description"
+      content="Perbedaan dan Penerapan SQL dan NoSQL dalam Pengelolaan Data Modern"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gradient">
+    <!-- Floating Stars -->
+    <div class="stars" id="stars"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"
+          ><img
+            src="./assets/img/logo.png"
+            alt="Logo"
+            style="width: 100%; height: 100%; object-fit: contain"
+        /></span>
+        YA.
+      </a>
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Toggle menu"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Beranda</a>
+        <a href="index.html#about" class="nav-link">Tentang Saya</a>
+        <a href="Karya.html" class="nav-link">Tugas Dan Karya</a>
+        <a href="index.html#works" class="nav-link">Portofolio</a>
+        <a href="index.html#contact" class="nav-cta">
+          <i class="fas fa-envelope"></i>
+          Kontak
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero article-hero" id="hero">
+      <div class="container">
+        <div
+          class="hero-content"
+          style="max-width: 900px; margin: 0 auto; text-align: center"
+        >
+          <h1>SQL dan NoSQL Database</h1>
+          <p>Perbedaan dan Penerapan dalam Pengelolaan Data Modern.</p>
+          <button class="btn btn-primary" id="scrollBtn">Mulai Membaca</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Section -->
+    <main class="article-section">
+      <h2 class="reveal">1. Pengantar</h2>
+      <p class="reveal">
+        Dalam dunia pengembangan aplikasi dan pengelolaan data, database menjadi
+        komponen paling krusial. Dua jenis database yang paling umum digunakan
+        adalah <strong>SQL (Structured Query Language)</strong> dan
+        <strong>NoSQL (Not Only SQL)</strong>.<br /><br />
+        Masing-masing memiliki kelebihan, kekurangan, dan kegunaan yang berbeda
+        tergantung kebutuhan proyek.<br />
+        <mark
+          >SQL bersifat relasional dengan struktur tabel yang ketat, sedangkan
+          NoSQL lebih fleksibel dan cocok untuk data tidak terstruktur.</mark
+        >
+      </p>
+
+      <h2 class="reveal">2. Apa Itu SQL?</h2>
+      <img
+        src="./assets/img/sql.png"
+        alt="SQL Database"
+        class="section-image reveal"
+      />
+      <p class="reveal">
+        SQL adalah bahasa standar yang digunakan untuk mengelola dan mengakses
+        data dalam database relasional. Database SQL menyimpan data dalam bentuk
+        tabel yang memiliki baris dan kolom.<br /><br />
+        Setiap tabel memiliki skema (struktur) yang ditentukan di awal, sehingga
+        setiap record harus mengikuti format yang sudah ditentukan.<br /><br />
+        <strong>Contoh Database SQL:</strong>
+      </p>
+      <ul class="reveal">
+        <li>MySQL</li>
+        <li>PostgreSQL</li>
+        <li>Microsoft SQL Server</li>
+        <li>Oracle Database</li>
+        <li>SQLite</li>
+      </ul>
+      <p class="reveal">
+        <mark
+          >SQL sangat cocok untuk aplikasi yang memerlukan transaksi akurat
+          seperti perbankan, ERP, dan e-commerce.</mark
+        ><br />
+        (Sumber:
+        <a
+          href="https://www.mongodb.com/resources/compare/relational-vs-non-relational-databases"
+          target="_blank"
+          >mongodb.com</a
+        >)
+      </p>
+
+      <h2 class="reveal">3. Konsep Dasar SQL</h2>
+      <p class="reveal">
+        SQL menggunakan tabel dengan relasi antar data (relational database).
+        Konsep dasar:
+      </p>
+      <ul class="reveal">
+        <li><strong>Tabel:</strong> Menyimpan data dalam baris dan kolom.</li>
+        <li>
+          <strong>Primary Key:</strong> Kolom unik untuk mengidentifikasi setiap
+          record.
+        </li>
+        <li>
+          <strong>Foreign Key:</strong> Menghubungkan tabel satu dengan tabel
+          lain.
+        </li>
+        <li>
+          <strong>Schema:</strong> Struktur database (kolom, tipe data, relasi)
+          yang sudah ditentukan.
+        </li>
+      </ul>
+      <p class="reveal"><strong>Contoh Query SQL:</strong></p>
+      <pre class="reveal">
+-- Mengambil semua data dari tabel users
+SELECT * FROM users;
+
+-- Menambahkan data baru
+INSERT INTO users (name, email) VALUES ('Yogi', '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="92ebfdf5fbd2f7eaf3ffe2fef7bcf1fdff">[email&#160;protected]</a>');
+
+-- Memperbarui data
+UPDATE users SET email = '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="96eff9f1ffd6f8f3e1b8f5f9fb">[email&#160;protected]</a>' WHERE id = 1;
+
+-- Menghapus data
+DELETE FROM users WHERE id = 1;</pre>
+
+      <h2 class="reveal">4. Apa Itu NoSQL?</h2>
+      <img
+        src="./assets/img/nosql.png"
+        alt="NoSQL Database"
+        class="section-image reveal"
+      />
+      <p class="reveal">
+        NoSQL adalah jenis database yang tidak menggunakan struktur tabel
+        relasional seperti SQL. NoSQL lebih fleksibel dan mampu menangani data
+        yang sangat besar, cepat berubah, dan beragam format (semi-structured
+        atau unstructured).<br /><br />
+        <strong>Jenis-jenis NoSQL:</strong>
+      </p>
+      <ul class="reveal">
+        <li>
+          <strong>Document-based:</strong> Menyimpan data dalam format dokumen
+          (JSON/BSON). Contoh: MongoDB, CouchDB.
+        </li>
+        <li>
+          <strong>Key-Value Store:</strong> Data disimpan dalam pasangan key dan
+          value. Contoh: Redis, DynamoDB.
+        </li>
+        <li>
+          <strong>Column-based:</strong> Data disimpan dalam kolom bukan baris.
+          Contoh: Cassandra, HBase.
+        </li>
+        <li>
+          <strong>Graph-based:</strong> Menyimpan data dalam bentuk node dan
+          relasi. Contoh: Neo4j, ArangoDB.
+        </li>
+      </ul>
+      <p class="reveal">
+        <mark
+          >NoSQL ideal untuk aplikasi real-time, media sosial, IoT, dan data
+          analytics.</mark
+        ><br />
+        (Sumber:
+        <a
+          href="https://cloud.google.com/discover/what-is-nosql"
+          target="_blank"
+          >cloud.google.com</a
+        >)
+      </p>
+
+      <h2 class="reveal">5. ACID vs BASE</h2>
+      <p class="reveal">
+        Perbedaan mendasar antara SQL dan NoSQL terletak pada prinsip
+        konsistensi datanya:
+      </p>
+      <p class="reveal"><strong>SQL (ACID)</strong></p>
+      <ul class="reveal">
+        <li>
+          <strong>Atomicity:</strong> Transaksi bersifat "semua atau tidak sama
+          sekali".
+        </li>
+        <li><strong>Consistency:</strong> Data selalu dalam keadaan valid.</li>
+        <li><strong>Isolation:</strong> Transaksi berjalan secara terpisah.</li>
+        <li>
+          <strong>Durability:</strong> Data tetap tersimpan meski sistem mati.
+        </li>
+      </ul>
+      <p class="reveal"><strong>NoSQL (BASE)</strong></p>
+      <ul class="reveal">
+        <li><strong>Basically Available:</strong> Sistem selalu tersedia.</li>
+        <li>
+          <strong>Soft State:</strong> Status data bisa berubah seiring waktu.
+        </li>
+        <li>
+          <strong>Eventually Consistent:</strong> Data akan konsisten pada
+          akhirnya, tidak langsung seketika.
+        </li>
+      </ul>
+      <p class="reveal">
+        <mark
+          >Pilih ACID jika butuh transaksi kritis (keuangan). Pilih BASE jika
+          butuh skalabilitas tinggi (sosial media).</mark
+        >
+      </p>
+
+      <h2 class="reveal">6. Skalabilitas: Vertikal vs Horizontal</h2>
+      <p class="reveal">
+        SQL umumnya menggunakan <strong>skalabilitas vertikal</strong> —
+        artinya, menambah kapasitas hanya dengan memperbesar server (lebih
+        banyak RAM, CPU lebih cepat).<br /><br />
+        NoSQL menggunakan <strong>skalabilitas horizontal</strong> — artinya,
+        menambah kapasitas dengan menambah lebih banyak server (cluster).<br />
+        <mark
+          >Skalabilitas horizontal lebih fleksibel dan hemat biaya dalam jangka
+          panjang.</mark
+        >
+      </p>
+
+      <h2 class="reveal">7. Kapan Menggunakan SQL?</h2>
+      <ul class="reveal">
+        <li>Butuh transaksi kompleks dengan banyak relasi antar tabel.</li>
+        <li>Data sudah terstruktur dengan skema tetap.</li>
+        <li>Sistem keuangan, e-commerce, ERP.</li>
+        <li>Data yang jarang berubah strukturnya.</li>
+      </ul>
+
+      <h2 class="reveal">8. Kapan Menggunakan NoSQL?</h2>
+      <ul class="reveal">
+        <li>Data tidak terstruktur atau semi-terstruktur.</li>
+        <li>Butuh skalabilitas tinggi dan real-time.</li>
+        <li>Aplikasi media sosial, IoT, game online.</li>
+        <li>Struktur data sering berubah-ubah.</li>
+      </ul>
+
+      <h2 class="reveal">9. Tabel Perbandingan SQL vs NoSQL</h2>
+      <table class="reveal">
+        <thead>
+          <tr>
+            <th>Aspek</th>
+            <th>SQL</th>
+            <th>NoSQL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Struktur</strong></td>
+            <td>Tabel dengan skema tetap</td>
+            <td>Dokumen, key-value, column, graph</td>
+          </tr>
+          <tr>
+            <td><strong>Skalabilitas</strong></td>
+            <td>Vertikal</td>
+            <td>Horizontal</td>
+          </tr>
+          <tr>
+            <td><strong>Konsistensi</strong></td>
+            <td>ACID (strong consistency)</td>
+            <td>BASE (eventually consistent)</td>
+          </tr>
+          <tr>
+            <td><strong>Query</strong></td>
+            <td>SQL (standar)</td>
+            <td>Beragam (tergantung database)</td>
+          </tr>
+          <tr>
+            <td><strong>Contoh Database</strong></td>
+            <td>MySQL, PostgreSQL, Oracle</td>
+            <td>MongoDB, Redis, Cassandra</td>
+          </tr>
+          <tr>
+            <td><strong>Use Case</strong></td>
+            <td>Fintech, e-commerce, ERP</td>
+            <td>Media sosial, IoT, analytics</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="reveal">10. Kesimpulan</h2>
+      <p class="reveal">
+        <strong>SQL</strong> dan <strong>NoSQL</strong> bukanlah musuh —
+        keduanya saling melengkapi. Pilihan database yang tepat sangat
+        tergantung pada kebutuhan proyek, skala data, dan jenis transaksi yang
+        diperlukan.<br /><br />
+        Banyak perusahaan besar bahkan menggabungkan keduanya dalam sistem
+        mereka (hybrid approach).<br />
+        <mark
+          >Pahami kebutuhan datamu terlebih dahulu, baru pilih database yang
+          tepat.</mark
+        >
+      </p>
+    </main>
+
+    <!-- Back Button -->
+    <div class="back-btn-container">
+      <a href="Karya.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i>
+        Kembali ke Karya
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left" style="text-align: left">
+            <p
+              style="
+                color: var(--accent);
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+              "
+            >
+              Tugas Teknologi Proyek dan Big Data
+            </p>
+            <p style="color: var(--text-secondary)">Nama: Yogi Ardiansyah</p>
+            <p style="color: var(--text-secondary)">NIM: 231101063</p>
+            <p style="color: var(--text-secondary)">Kelas: TI 5B</p>
+            <p
+              style="
+                color: var(--text-muted);
+                font-size: 0.875rem;
+                margin-top: 0.5rem;
+              "
+            >
+              © Universitas Nahdlatul Ulama Sunan Giri Bojonegoro
+            </p>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://www.instagram.com/yogi__ardiansyah?igsh=MTZwNnl4OHg2M3BkeQ=="
+              target="_blank"
+              class="social-link"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+  </body>
+</html>

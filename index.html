@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yogi Ardiansyah - Portfolio</title>
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+    <meta
+      name="description"
+      content="Portfolio Yogi Ardiansyah - Desainer Grafis & Web Developer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gradient">
+    <!-- Floating Stars -->
+    <div class="stars" id="stars"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <a href="#" class="logo">
+        <span class="logo-icon"
+          ><img
+            src="./assets/img/logo.png"
+            alt="Logo"
+            style="width: 100%; height: 100%; object-fit: contain"
+        /></span>
+        YA.
+      </a>
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Toggle menu"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link">Beranda</a>
+        <a href="#about" class="nav-link">Tentang Saya</a>
+        <a href="Karya.html" class="nav-link">Tugas Dan Karya</a>
+        <a href="#works" class="nav-link">Portofolio</a>
+        <a href="#contact" class="nav-cta">
+          <i class="fas fa-envelope"></i>
+          Kontak
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <i class="fas fa-circle"></i>
+              Available for work
+            </div>
+            <h1 class="hero-title">
+              I'm <span>Yogi Ardiansyah</span><br />Full Stack Developer
+            </h1>
+            <p class="hero-description">
+              Saya merancang tampilan yang estetis dan fungsional, menggabungkan
+              seni visual dengan teknologi web modern.
+            </p>
+            <div class="hero-buttons">
+              <a href="#works" class="btn btn-primary">
+                <i class="fas fa-folder-open"></i>
+                Lihat Karya Saya
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <i class="fas fa-paper-plane"></i>
+                Hubungi Saya
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <!-- Floating Cards -->
+            <div class="floating-card left">
+              <div class="floating-card-title">Based From</div>
+              <div class="floating-card-value">
+                <span class="flag">🇮🇩</span>
+                Indonesia
+              </div>
+            </div>
+            <div class="floating-card right">
+              <div class="floating-card-title">Experience</div>
+              <div class="floating-card-value">
+                <i class="fas fa-star" style="color: var(--accent)"></i>
+                2+ Years
+              </div>
+            </div>
+            <!-- Main Image -->
+            <div class="hero-image-main">
+              <img
+                src="./assets/img/orang.png"
+                alt="Yogi Ardiansyah"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <h2 class="section-title reveal">WHO AM I ?</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-image reveal">
+            <div class="about-image-wrapper">
+              <img
+                src="./assets/img/orang2.png"
+                alt="Yogi Ardiansyah"
+                style="
+                  width: 100%;
+                  height: 400px;
+                  object-fit: cover;
+                  border-radius: var(--radius-lg);
+                "
+              />
+            </div>
+            <div class="about-floating-img top">
+              <div
+                style="
+                  width: 150px;
+                  height: 100px;
+                  background: linear-gradient(135deg, #0f1a3d, #1a2a5e);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 12px;
+                "
+              >
+                <i
+                  class="fas fa-laptop-code"
+                  style="font-size: 32px; color: var(--accent)"
+                ></i>
+              </div>
+            </div>
+            <div class="about-floating-img bottom">
+              <div
+                style="
+                  width: 120px;
+                  height: 120px;
+                  background: linear-gradient(135deg, #1a2a5e, #0f1a3d);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 12px;
+                "
+              >
+                <i
+                  class="fas fa-palette"
+                  style="font-size: 32px; color: var(--accent)"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="about-content reveal">
+            <h3>Passionate Designer & Developer</h3>
+            <p>
+              Saya seorang desainer grafis dan pengembang web yang fokus
+              menciptakan pengalaman digital yang menarik dan mudah digunakan.
+              Menggabungkan estetika, konsistensi, dan fungsionalitas adalah
+              prinsip saya dalam setiap proyek.
+            </p>
+            <p>
+              Pengalaman saya mencakup berbagai proyek mulai dari desain UI/UX
+              hingga pengembangan web full-stack. Saya selalu berusaha untuk
+              memberikan hasil terbaik dengan memperhatikan detail dan kebutuhan
+              pengguna.
+            </p>
+            <a href="Karya.html" class="about-link">
+              Learn More About Me
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title reveal">MY SKILLS</h2>
+          <p class="section-subtitle reveal">
+            Teknologi dan tools yang saya kuasai
+          </p>
+        </div>
+
+        <div class="skills-grid reveal">
+          <div class="skill-card">
+            <i class="fab fa-html5" style="color: #e34f26"></i>
+            <h4>HTML5</h4>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-css3-alt" style="color: #1572b6"></i>
+            <h4>CSS3</h4>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-js" style="color: #f7df1e"></i>
+            <h4>JavaScript</h4>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-react" style="color: #61dafb"></i>
+            <h4>React</h4>
+          </div>
+          <div class="skill-card">
+            <img
+              src="./assets/img/ps.png"
+              alt="Photoshop"
+              style="width: 48px; height: 48px"
+            />
+            <h4>Photoshop</h4>
+          </div>
+          <div class="skill-card">
+            <img
+              src="./assets/img/logoAi.png"
+              alt="Illustrator"
+              style="width: 48px; height: 48px"
+            />
+            <h4>Illustrator</h4>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-figma" style="color: #f24e1e"></i>
+            <h4>Figma</h4>
+          </div>
+          <div class="experience-card">
+            <div class="number">2</div>
+            <div class="label">Years<br />Experience<br />Working</div>
+          </div>
+        </div>
+
+        <div class="additional-skills reveal">
+          <h3>ADDITIONAL SKILLS</h3>
+          <div class="additional-skills-grid">
+            <div class="additional-skill-item">
+              <i class="fab fa-bootstrap" style="color: #7952b3"></i>
+              <span>Bootstrap</span>
+            </div>
+            <div class="additional-skill-item">
+              <i class="fas fa-fire" style="color: #ffca28"></i>
+              <span>Firebase</span>
+            </div>
+            <div class="additional-skill-item">
+              <i class="fab fa-node-js" style="color: #339933"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="additional-skill-item">
+              <i class="fas fa-paint-brush" style="color: #00c4cc"></i>
+              <span>Canva</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works Section -->
+    <section class="section works" id="works">
+      <div class="container">
+        <div class="works-header reveal">
+          <h2 class="works-title">THE WORKS<br />CLOSEST TO<br />MY HEART</h2>
+          <div class="works-images">
+            <div class="work-image-card">
+              <div
+                style="
+                  width: 100%;
+                  height: 100%;
+                  background: linear-gradient(135deg, #01909e, #017a86);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i
+                  class="fas fa-project-diagram"
+                  style="font-size: 40px; color: rgba(10, 14, 39, 0.3)"
+                ></i>
+              </div>
+              <div class="overlay">
+                <h4>Plumbing Company</h4>
+              </div>
+            </div>
+            <div class="work-image-card">
+              <div
+                style="
+                  width: 100%;
+                  height: 100%;
+                  background: linear-gradient(135deg, #0f1a3d, #1a2a5e);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i
+                  class="fas fa-building"
+                  style="font-size: 40px; color: var(--accent)"
+                ></i>
+              </div>
+              <div class="overlay">
+                <h4>Business Project</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="hero-buttons reveal"
+          style="margin-bottom: var(--spacing-3xl)"
+        >
+          <a href="Karya.html" class="btn btn-primary">
+            <i class="fas fa-folder-open"></i>
+            Show My Projects
+          </a>
+        </div>
+
+        <div class="works-grid">
+          <div class="work-card reveal" data-tilt>
+            <div class="work-card-image">
+              <div
+                style="
+                  width: 100%;
+                  height: 100%;
+                  background: linear-gradient(
+                    135deg,
+                    var(--accent) 0%,
+                    #017a86 100%
+                  );
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i
+                  class="fas fa-heartbeat"
+                  style="font-size: 60px; color: rgba(10, 14, 39, 0.3)"
+                ></i>
+              </div>
+            </div>
+            <div class="work-card-content">
+              <h3 class="work-card-title">Sadar Sehat Ngraseh</h3>
+              <p class="work-card-description">
+                Website kesehatan desa yang berisi informas kesehatan dan jadwal
+                posyandu secara digital.
+              </p>
+              <a
+                href="https://sadarsehatngraseh.pages.dev/"
+                class="work-card-link"
+                target="_blank"
+              >
+                Kunjungi Situs
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work-card reveal" data-tilt>
+            <div class="work-card-image">
+              <div
+                style="
+                  width: 100%;
+                  height: 100%;
+                  background: linear-gradient(135deg, #017a86 0%, #015f68 100%);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i
+                  class="fas fa-smile"
+                  style="font-size: 60px; color: rgba(10, 14, 39, 0.3)"
+                ></i>
+              </div>
+            </div>
+            <div class="work-card-content">
+              <h3 class="work-card-title">Mood Fuel</h3>
+              <p class="work-card-description">
+                Website MoodFuel adalah web mood tracek memilih makanan terbaik
+                pengubah mood harian Anda.
+              </p>
+              <a
+                href="https://mood-fuel.netlify.app/"
+                class="work-card-link"
+                target="_blank"
+              >
+                Kunjungi Situs
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work-card reveal" data-tilt>
+            <div class="work-card-image">
+              <div
+                style="
+                  width: 100%;
+                  height: 100%;
+                  background: linear-gradient(
+                    135deg,
+                    #015f68 0%,
+                    var(--accent) 100%
+                  );
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i
+                  class="fas fa-palette"
+                  style="font-size: 60px; color: rgba(10, 14, 39, 0.3)"
+                ></i>
+              </div>
+            </div>
+            <div class="work-card-content">
+              <h3 class="work-card-title">Proyek Desain Grafis</h3>
+              <p class="work-card-description">
+                Kumpulan karya desain grafis yang mencakup branding, ilustrasi,
+                dan layout.
+              </p>
+              <a href="#" class="work-card-link">
+                Kunjungi Situs
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote">
+      <div class="container">
+        <p class="quote-text reveal">
+          "Desain bukan sekadar tampilan, tapi cara sebuah pesan berbicara."
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <h2>LET'S HAVE A CHAT</h2>
+          <form
+            class="contact-form"
+            action="https://mail.google.com/mail/?view=cm&fs=1&to=yoda.freelance@gmail.com"
+            method="get"
+            target="_blank"
+          >
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-input"
+                placeholder="YOUR NAME"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-input"
+                placeholder="EMAIL ADDRESS"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-input"
+                placeholder="CHAT HERE"
+                rows="4"
+              ></textarea>
+            </div>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=yoda.freelance@gmail.com"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary"
+            >
+              <i class="fas fa-paper-plane"></i>
+              SEND MESSAGE
+            </a>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p class="footer-text">
+            © 2025 Yogi Ardiansyah – Semua Hak Dilindungi
+          </p>
+          <div class="social-links">
+            <a
+              href="https://www.instagram.com/yogi__ardiansyah?igsh=MTZwNnl4OHg2M3BkeQ=="
+              class="social-link"
+              aria-label="Instagram"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://github.com/YODA178"
+              class="social-link"
+              aria-label="GitHub"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/yogi-ardiansyah-875833343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="social-link"
+              aria-label="LinkedIn"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+  </body>
+</html>

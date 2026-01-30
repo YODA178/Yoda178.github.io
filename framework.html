@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Framework Big Data</title>
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+    <meta
+      name="description"
+      content="Mengenal Framework Populer untuk Pengolahan Data Skala Besar"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gradient">
+    <!-- Floating Stars -->
+    <div class="stars" id="stars"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"
+          ><img
+            src="./assets/img/logo.png"
+            alt="Logo"
+            style="width: 100%; height: 100%; object-fit: contain"
+        /></span>
+        YA.
+      </a>
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Toggle menu"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Beranda</a>
+        <a href="index.html#about" class="nav-link">Tentang Saya</a>
+        <a href="Karya.html" class="nav-link">Tugas Dan Karya</a>
+        <a href="index.html#works" class="nav-link">Portofolio</a>
+        <a href="index.html#contact" class="nav-cta">
+          <i class="fas fa-envelope"></i>
+          Kontak
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero article-hero" id="hero">
+      <div class="container">
+        <div
+          class="hero-content"
+          style="max-width: 900px; margin: 0 auto; text-align: center"
+        >
+          <h1>Framework Big Data</h1>
+          <p>Mengenal Framework Populer untuk Pengolahan Data Skala Besar.</p>
+          <button class="btn btn-primary" id="scrollBtn">Mulai Membaca</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Section -->
+    <main class="article-section">
+      <h2 class="reveal">1. Pengantar</h2>
+      <p class="reveal">
+        Untuk mengolah data dalam skala besar (Big Data), dibutuhkan kerangka
+        kerja (framework) khusus yang mampu menangani penyimpanan, pemrosesan,
+        dan analisis data secara efisien dan terdistribusi.<br />
+        Framework Big Data ini memungkinkan pemrosesan data yang sangat cepat
+        meskipun datanya mencapai petabyte.<br />
+        <mark
+          >Framework adalah 'mesin' di balik pengolahan data besar — tanpa
+          framework yang tepat, analisis data tidak akan efisien.</mark
+        >
+      </p>
+
+      <h2 class="reveal">2. Apache Hadoop</h2>
+      <img
+        src="./assets/img/hadoop.png"
+        alt="Apache Hadoop"
+        class="section-image reveal"
+      />
+      <p class="reveal">
+        Hadoop adalah salah satu framework Big Data paling awal dan populer.
+        Dibuat oleh Apache Software Foundation, Hadoop menggunakan sistem
+        pemrosesan terdistribusi berbasis klaster komputer.<br /><br />
+        <strong>Komponen Utama Hadoop:</strong>
+      </p>
+      <ul class="reveal">
+        <li>
+          <strong>HDFS (Hadoop Distributed File System)</strong> – sistem
+          penyimpanan data terdistribusi.
+        </li>
+        <li>
+          <strong>MapReduce</strong> – model pemrosesan paralel untuk membagi
+          tugas ke banyak node.
+        </li>
+        <li>
+          <strong>YARN (Yet Another Resource Negotiator)</strong> – manajemen
+          sumber daya di klaster Hadoop.
+        </li>
+      </ul>
+      <p class="reveal">
+        <mark
+          >Hadoop ideal untuk penyimpanan data masif dan pemrosesan batch (tidak
+          real-time).</mark
+        ><br />
+        (Sumber:
+        <a href="https://www.databricks.com/glossary/hadoop" target="_blank"
+          >databricks.com</a
+        >)
+      </p>
+
+      <h2 class="reveal">3. Apache Spark</h2>
+      <img
+        src="./assets/img/spark.png"
+        alt="Apache Spark"
+        class="section-image reveal"
+      />
+      <p class="reveal">
+        Spark adalah framework pemrosesan data cepat yang dikembangkan sebagai
+        penyempurnaan dari MapReduce. Spark mendukung pemrosesan data secara
+        in-memory (mengolah data langsung di memori), sehingga jauh lebih cepat
+        dari Hadoop.
+      </p>
+      <ul class="reveal">
+        <li>
+          <strong>Spark Core</strong> – inti engine untuk pemrosesan paralel.
+        </li>
+        <li><strong>Spark SQL</strong> – query data dengan SQL.</li>
+        <li><strong>MLlib</strong> – library untuk machine learning.</li>
+        <li><strong>GraphX</strong> – analisis data berbentuk graf.</li>
+        <li>
+          <strong>Spark Streaming</strong> – pemrosesan data secara real-time.
+        </li>
+      </ul>
+      <p class="reveal">
+        <mark
+          >Spark hingga 100x lebih cepat dari Hadoop MapReduce karena pengolahan
+          berbasis memori.</mark
+        ><br />
+        (Sumber:
+        <a
+          href="https://www.sap.com/products/technology-platform/what-is-big-data.html"
+          target="_blank"
+          >sap.com</a
+        >)
+      </p>
+
+      <h2 class="reveal">4. Apache Kafka</h2>
+      <p class="reveal">
+        Kafka adalah platform streaming yang digunakan untuk mengelola aliran
+        data secara real-time dari berbagai sumber. Kafka sering digunakan
+        bersamaan dengan Spark atau framework lain sebagai layer ingest
+        (pengumpulan data).
+      </p>
+      <ul class="reveal">
+        <li>Real-time streaming</li>
+        <li>Fault-tolerant (tahan gangguan)</li>
+        <li>Digunakan oleh LinkedIn, Netflix, Uber, dll.</li>
+      </ul>
+      <p class="reveal">
+        <mark
+          >Kafka cocok untuk log server, event tracking, dan data
+          pipeline.</mark
+        ><br />
+        (Sumber:
+        <a
+          href="https://www.techtarget.com/searchdatamanagement/definition/big-data"
+          target="_blank"
+          >techtarget.com</a
+        >)
+      </p>
+
+      <h2 class="reveal">5. Apache Flink</h2>
+      <p class="reveal">
+        Flink adalah framework pemrosesan stream yang dirancang untuk aplikasi
+        real-time. Berbeda dari Spark yang awalnya batch-oriented, Flink memang
+        dibangun untuk streaming sejak awal.<br /><br />
+        <strong>Keunggulan Flink:</strong>
+      </p>
+      <ul class="reveal">
+        <li>Low latency (waktu tunda rendah)</li>
+        <li>Event-time processing (memperhitungkan waktu kejadian)</li>
+        <li>Pemrosesan stateful (menyimpan status antar event)</li>
+      </ul>
+      <p class="reveal">
+        <mark
+          >Flink ideal untuk aplikasi IoT, fraud detection, dan event-driven
+          processing.</mark
+        >
+      </p>
+
+      <h2 class="reveal">6. Apache Storm</h2>
+      <p class="reveal">
+        Storm adalah framework untuk stream processing real-time, mirip dengan
+        Flink namun lebih ringan. Storm sering digunakan untuk pemrosesan data
+        dari sumber terus-menerus seperti sensor dan log server.<br />
+        (Sumber:
+        <a href="https://storm.apache.org/" target="_blank">storm.apache.org</a
+        >)
+      </p>
+
+      <h2 class="reveal">7. Framework Lainnya</h2>
+      <p class="reveal">
+        Selain framework di atas, ada beberapa teknologi pendukung lainnya dalam
+        ekosistem Big Data:
+      </p>
+      <ul class="reveal">
+        <li><strong>Hive</strong> – query data di Hadoop dengan sintaks SQL</li>
+        <li>
+          <strong>Pig</strong> – scripting platform untuk analisis data besar
+        </li>
+        <li><strong>Presto</strong> – query engine untuk data terdistribusi</li>
+        <li><strong>Cassandra</strong> – database NoSQL terdistribusi</li>
+        <li>
+          <strong>Elasticsearch</strong> – search engine cepat untuk data log
+          dan teks
+        </li>
+      </ul>
+
+      <h2 class="reveal">8. Perbandingan Framework Big Data</h2>
+      <table class="reveal">
+        <thead>
+          <tr>
+            <th>Framework</th>
+            <th>Jenis</th>
+            <th>Keunggulan</th>
+            <th>Kelemahan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Hadoop</strong></td>
+            <td>Batch</td>
+            <td>Skalabilitas tinggi</td>
+            <td>Lambat (disk-based)</td>
+          </tr>
+          <tr>
+            <td><strong>Spark</strong></td>
+            <td>Batch & Streaming</td>
+            <td>Cepat (in-memory)</td>
+            <td>Butuh RAM besar</td>
+          </tr>
+          <tr>
+            <td><strong>Kafka</strong></td>
+            <td>Streaming</td>
+            <td>Real-time, durable</td>
+            <td>Bukan untuk analisis langsung</td>
+          </tr>
+          <tr>
+            <td><strong>Flink</strong></td>
+            <td>Streaming</td>
+            <td>Low latency, stateful</td>
+            <td>Ekosistem lebih kecil</td>
+          </tr>
+          <tr>
+            <td><strong>Storm</strong></td>
+            <td>Streaming</td>
+            <td>Mudah di-setup</td>
+            <td>Fitur tidak selengkap Flink</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="reveal">9. Kesimpulan</h2>
+      <p class="reveal">
+        Pemilihan framework Big Data yang tepat sangat bergantung pada kebutuhan
+        proyek. Jika Anda butuh pemrosesan batch skala besar, Hadoop atau Spark
+        bisa jadi pilihan. Jika fokus pada real-time streaming, Kafka dan Flink
+        lebih cocok.<br />
+        <mark
+          >Tidak ada satu framework terbaik — yang ada adalah kombinasi
+          framework yang tepat untuk kebutuhan Anda.</mark
+        >
+      </p>
+    </main>
+
+    <!-- Back Button -->
+    <div class="back-btn-container">
+      <a href="Karya.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i>
+        Kembali ke Karya
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left" style="text-align: left">
+            <p
+              style="
+                color: var(--accent);
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+              "
+            >
+              Tugas Teknologi Proyek dan Big Data
+            </p>
+            <p style="color: var(--text-secondary)">Nama: Yogi Ardiansyah</p>
+            <p style="color: var(--text-secondary)">NIM: 231101063</p>
+            <p style="color: var(--text-secondary)">Kelas: TI 5B</p>
+            <p
+              style="
+                color: var(--text-muted);
+                font-size: 0.875rem;
+                margin-top: 0.5rem;
+              "
+            >
+              © Universitas Nahdlatul Ulama Sunan Giri Bojonegoro
+            </p>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://www.instagram.com/yogi__ardiansyah?igsh=MTZwNnl4OHg2M3BkeQ=="
+              target="_blank"
+              class="social-link"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+  </body>
+</html>

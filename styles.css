@@ -226,6 +226,8 @@ button {
     align-items: center;
     justify-content: center;
     font-size: var(--font-size-lg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .nav-menu {

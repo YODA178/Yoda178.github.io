@@ -222,9 +222,6 @@ button {
 .logo-icon {
     width: 36px;
     height: 36px;
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
-    border-radius: var(--radius-md);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,0 +1,30 @@
+# Disable directory browsing
+Options -Indexes
+
+# Prevent Server Signature leakage
+ServerSignature Off
+
+# Configure Security Headers
+<IfModule mod_headers.c>
+    # Prevent Clickjacking (Clickjacking Protection)
+    Header set X-Frame-Options "SAMEORIGIN"
+    
+    # Enable XSS Filter in browsers
+    Header set X-XSS-Protection "1; mode=block"
+    
+    # Prevent MIME Sniffing vulnerabilities
+    Header set X-Content-Type-Options "nosniff"
+    
+    # Control Referrer information sent
+    Header set Referrer-Policy "no-referrer-when-downgrade"
+</IfModule>
+
+# Handle HTML5 History routing fallback (SPA Rewrite)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.html [L]
+</IfModule>
